@@ -1,0 +1,20 @@
+<config>
+    <global>
+        <events>
+            <wordpress_shortcode_apply>
+                <observers>
+                    <fishpigextension>
+                        <type>singleton</type>
+                        <class>LWM_FishpigCMSBlockShortcode_Model_Observer</class>
+                        <method>applyShortCodes</method>
+                    </fishpigextension>
+                </observers>
+            </wordpress_shortcode_apply>
+        </events>
+        <helpers>
+            <magentocmsshortcode>
+                <class>LWM_FishpigCMSBlockShortcode_Helper</class>
+            </magentocmsshortcode>
+        </helpers>
+    </global>
+</config>               
